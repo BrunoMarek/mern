@@ -25,9 +25,9 @@ const List = () => {
     }
 
     const taskDone = (i)=>{
-        let newList = list.filter((i)=>{
+        let vanish = list.filter((i)=>{
         })
-        setList(newList);
+        setList(vanish);
     }
 
     return (
