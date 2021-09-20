@@ -42,9 +42,9 @@ const List = () => {
             <hr />
             
             {list.map((taskk,i)=>{
-                const Classes =[];
+                const todoList =[];
                 return <div key={i} className="form-group">
-                        <p className={Classes.join(" ")} >{taskk.tasks}</p>
+                        <p className={todoList.join(" ")} >{taskk.tasks}</p>
                         <input type="checkbox" name="done" id="" />
                         <button onClick={(e)=>taskDone(i)} className="btn btn-danger">Delete</button>
                     </div>
