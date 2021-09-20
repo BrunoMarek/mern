@@ -37,7 +37,7 @@ const List = () => {
                 <div className="form-group">
                     <input name="tasks" onChange={(e) => changeHandler(e)} type="text" value={formInfo.tasks} />
                 </div>
-                <input className="btn btn-success" type="submit" value="Add" />
+                <input className="btn btn-success" type="submit" value="Add Task" />
             </form>
             <hr />
             
@@ -46,7 +46,7 @@ const List = () => {
                 return <div key={i} className="form-group">
                         <p className={todoList.join(" ")} >{taskk.tasks}</p>
                         <input type="checkbox" name="done" id="" />
-                        <button onClick={(e)=>taskDone(i)} className="btn btn-danger">Delete</button>
+                        <button onClick={(e)=>taskDone(i)} className="btn btn-danger">Task Done</button>
                     </div>
             })
             }
