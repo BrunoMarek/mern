@@ -25,7 +25,7 @@ const List = () => {
     }
 
     const taskDone = (i)=>{
-        let newList = list.filter((idx)=>{
+        let newList = list.filter((i)=>{
         })
         setList(newList);
     }
